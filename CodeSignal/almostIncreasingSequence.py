@@ -30,6 +30,7 @@ def almostIncreasingSequence(sequence):
                 return True
             elif IncreasingSequence(test_seq2) == True:
                 return True
-            else:
-                return Fals
+            # else:
+            #     return False
+    return False
 print(almostIncreasingSequence([1, 2, 3, 4, 3, 6]))
