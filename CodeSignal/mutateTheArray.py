@@ -1,3 +1,4 @@
+# PRACTICE TEST
 # Given an integer n and an array a of length n, your task is to apply the following mutation to a:
 
 # Array a mutates into a new array b of length n.
