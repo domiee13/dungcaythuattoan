@@ -8,14 +8,21 @@
 # rot13("This is my first ROT13 excercise!" == "Guvf vf zl svefg EBG13 rkprepvfr!"
 
 #My solution
-def rot13(text):
-    rot13 = str.maketrans( 
-    "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz", 
-    "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm")
-    return str.translate(text,rot13)
+# def rot13(text):
+#     rot13 = str.maketrans( 
+#     "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz", 
+#     "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm")
+#     return str.translate(text,rot13)
 
 print(rot13("EBG13 rknzcyr."))
 
 #best solution
 def rot13_bs(mess):
     return mess.encode('rot13')
+
+import string
+
+def rot13(message):
+    return message.encode("rot13")
+
+print(rot13_bs("abc"))
